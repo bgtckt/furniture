@@ -1,0 +1,70 @@
+//выделение блока
+.outline(@highlight-color) {
+  outline: 2px solid @highlight-color;
+  background-color: lighten(@highlight-color, 40%);
+}
+
+//позиционирование контентной области блока
+.cont-pos(@top-pad, @bot-pad) {
+  width: @cont-width-desk;
+  @media (max-width: @tablet-width) {
+    width: @cont-width-tablet;
+  }
+  @media (max-width: @mob-width) {
+    width: @cont-width-mob;
+  }
+  margin: 0 auto;
+  padding-top: @top-pad;
+  padding-bottom: @bot-pad;
+}
+
+//удаление стилей для списка
+.no-list {
+  list-style: none;
+}
+
+//удаление подчеркивания у ссылок
+.no-line {
+  text-decoration: none;
+}
+
+//создание grid-контейнера с колонками
+.grid(@quantity, @gap) {
+  display: grid;
+  grid-template-columns: repeat(@quantity, auto);
+  grid-gap: @gap;
+}
+
+//стили заголовка и подзаголовка раздела
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  text-align: center;
+  color: @color-darkgray;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 36px;
+    left: 47.5%;
+    width: 61px;
+    height: 10px;
+    border-bottom: 1px solid @color-black;
+  }
+}
+
+//фильтры для изменения цвета картинок при наведении и нажатии
+.black-orange {
+  filter: invert(75%) sepia(24%) saturate(4178%) hue-rotate(322deg) brightness(100%) contrast(88%);
+}
+
+.black-gray {
+  filter: invert(72%) sepia(0%) saturate(0%) hue-rotate(342deg) brightness(90%) contrast(94%);
+}

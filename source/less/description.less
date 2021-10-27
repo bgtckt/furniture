@@ -1,0 +1,48 @@
+.description {
+  .outline(blue);
+  width: @desktop-width;
+  background: url('../img/description_bg.png') 100% 70px no-repeat @color-light;
+}
+
+.description__wrapper {
+  .outline(red);
+  .cont-pos(205px, 155px);
+}
+
+.description__block {
+  .outline(chocolate);
+  width: 604px;
+}
+
+.description__title {
+  .outline(blue);
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.description__text {
+  .outline(blue);
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.description__button {
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: @color-white;
+  background-color: @color-orange;
+  border: none;
+
+  &:hover {
+    background-color: @color-dark;
+  }
+
+  &:active {
+    background-color: @color-darkgray;
+  }
+}

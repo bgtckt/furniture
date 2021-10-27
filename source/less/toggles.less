@@ -1,0 +1,21 @@
+.toggles {
+  text-align: center;
+}
+
+.toggles__button {
+  margin-right: 19px;
+  cursor: pointer;
+  fill: lighten(@color-orange, 10%);
+
+  &--current {
+    fill: @color-orange;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    fill: @color-dark;
+  }
+}

@@ -1,0 +1,89 @@
+.newsletter {
+  .outline(blue);
+  width: @desktop-width;
+  background-color: @color-gray;
+}
+
+.newsletter__wrapper {
+  .outline(red);
+  .cont-pos(50px, 120px);
+}
+
+.newsletter__title {
+  .outline(blue);
+  margin: 0;
+  .title;
+}
+
+.newsletter__subtitle {
+  .outline(blue);
+  margin-top: 18px;
+  margin-bottom: 0;
+  .subtitle;
+}
+
+.newsletter__form {
+  .outline(chocolate);
+  margin-top: 87px;
+}
+
+.newsletter__fieldset {
+  .outline(cyan);
+  border: none;
+  padding: 0;
+  .grid(3, 105px);
+}
+
+.newsletter__field {
+  .outline(blue);
+  width: 310px;
+  display: grid;
+  grid-template-rows: 2;
+  grid-row-gap: 10px;
+}
+
+.newsletter__label {
+  .outline(gold);
+  padding-left: 20px;
+  font-weight: 700;
+  color: @color-orange;
+}
+
+.newsletter__input {
+  .outline(red);
+  width: 288px;
+  height: 40px;
+  padding-left: 20px;
+  color: @color-dark;
+  background-color: lighten(@color-darkgray, 10%);
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:focus {
+    outline: 2px solid @color-orange;
+    background-color: @color-gray;
+  }
+}
+
+.newsletter__button {
+  margin: 50px 0 0 470px;
+  padding: 14px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: @color-white;
+  background-color: @color-black;
+  border: none;
+
+  &:hover {
+    background-color: @color-orange;
+  }
+
+  &:active {
+    background-color: @color-darkgray;
+  }
+}

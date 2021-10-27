@@ -1,0 +1,32 @@
+.addition {
+  .grid(2, 18px);
+}
+
+.addition__link {
+  //.outline(blue);
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+
+  &--cart {
+    background-image: url('../img/cart.png');
+  }
+
+  &--profile {
+    background-image: url('../img/profile.png');
+  }
+
+  &:hover {
+    filter: invert(75%) sepia(24%) saturate(4178%) hue-rotate(322deg) brightness(100%) contrast(88%);
+  }
+
+  &:active {
+    filter: invert(72%) sepia(0%) saturate(0%) hue-rotate(342deg) brightness(90%) contrast(94%);
+  }
+}

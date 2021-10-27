@@ -1,0 +1,32 @@
+.payments {
+  .no-list;
+  padding: 0;
+  width: 251px;
+  .grid(4, 9px);
+}
+
+.payments__item {
+  .outline(black);
+  padding: 0;
+  width: 56px;
+  height: 43px;
+  font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--visa {
+    background-image: url('../img/visa.png');
+  }
+
+  &--mc {
+    background-image: url('../img/mastercard.png');
+  }
+
+  &--maes {
+    background-image: url('../img/maestro.png');
+  }
+
+  &--ae {
+    background-image: url('../img/americanexpress.png');
+  }
+}

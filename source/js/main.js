@@ -18,7 +18,7 @@ for (let saleItem of saleItems) {
   salePhoto.src = 'img/' + saleItem.photo;
   saleReviewsAmount.textContent = saleItem.reviews;
   saleName.textContent = saleItem.name;
-  salePriceOld.textContent = saleItem.olpPrice;
+  salePriceOld.textContent = saleItem.oldPrice;
   salePriceNew.textContent = saleItem.newPrice;
   let saleCard = saleTemplate.content.cloneNode(true);
   saleList.appendChild(saleCard);

@@ -1,0 +1,62 @@
+.categories {
+  padding: 0 10px;
+  .grid(3, 19px);
+  color: @color-white;
+  font-weight: 600;
+}
+
+.categories__title {
+  .outline(blue);
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+}
+
+.categories__button {
+  //.outline(blue);
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: inherit;
+  position: relative;
+  align-self: center;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    filter: invert(100%);
+  }
+
+  &--burger {
+    &::before {
+      background-image: url('../img/menu_burger.png');
+    }
+  }
+
+  &--arrow {
+    &::before {
+      background-image: url('../img/arrow_down1.png');
+    }
+  }
+
+  &:hover {
+
+    &::before {
+      filter: brightness(0) saturate(100%);
+    }
+  }
+
+  &:hover {
+
+    &:active{
+      filter: brightness(0) saturate(100%);
+      .black-gray;
+    }
+  }
+}

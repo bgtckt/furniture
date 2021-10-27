@@ -49,12 +49,14 @@
     <main class="page-main">
       <section class="description">
         <div class="description__wrapper">
-          <h1 class="description__title">Покупайте лучшую мебель для вашего дома онлайн</h1>
-          <p class="description__text">Получите доступ к мебели премиум-класса, изготовленной из материалов
-            высочайшего качества. Когда вы покупаете мебель в нашем интернет-магазине, вы уверены, что получите
-            наилучший продукт, который, несомненно, украсит ваш интерьер.
-          </p>
-          <button class="description__button button" type="button">Перейти к покупкам</button>
+          <div class="description__block">
+            <h1 class="description__title">Лучшая мебель для вашего дома</h1>
+            <p class="description__text">Получите доступ к мебели премиум-класса, изготовленной из материалов
+              высочайшего качества. Когда вы покупаете мебель в нашем интернет-магазине, вы уверены, что получите
+              наилучший продукт, который, несомненно, украсит ваш интерьер.
+            </p>
+            <button class="description__button button" type="button">К покупкам</button>
+          </div>
         </div>
       </section>
 
@@ -66,7 +68,7 @@
           <template id="sale-card">
             <li class="sale__card">
               <img class="sale__photo" src='img/default.png' width="265" height="241" alt="Товар со скидкой">
-              <span class="sale__label"></span>
+              <span class="sale__label">Скидка</span>
               <div class="sale__reviews">
                 <img class="sale__stars" src="img/sale_stars.png" width="87" height="16" alt="Рейтинг">
                 <p>(<span></span>)</p>
@@ -83,29 +85,37 @@
 
       <section class="gallery">
         <div class="gallery__wrapper">
-          <h2 class="gallery__title">Галлерея интерьеров, подобранных c использованием нашей продукции</h2>
+          <h2 class="gallery__title">Галлерея интерьеров с нашей продукцией</h2>
           <p class="gallery__subtitle">Познакомьтесь с готовыми решениями, созданными командой профессионалов.</p>
-          <ul class="gallery__list">
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic1.png" width="559" height="291" alt="Фото интерьера">
-            </li>
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic2.png" width="266" height="269" alt="Фото интерьера">
-            </li>
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic3.png" width="266" height="269" alt="Фото интерьера">
-            </li>
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic4.png" width="266" height="269" alt="Фото интерьера">
-            </li>
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic5.png" width="266" height="269" alt="Фото интерьера">
-            </li>
-            <li class="galley__item">
-              <img class="galley__photo" src="img/gallery_pic6.png" width="559" height="291" alt="Фото интерьера">
-              <button class="gallery__button button" type="button">Открыть галерею</button>
-            </li>
-          </ul>
+          <div class="gallery__content">
+            <div class="gallery__block">
+              <ul class="gallery__list">
+                <li class="gallery__item gallery__item--large">
+                  <img class="gallery__photo" src="img/gallery_pic1.png" width="559" height="291" alt="Фото интерьера">
+                </li>
+                <li class="gallery__item">
+                  <img class="gallery__photo" src="img/gallery_pic2.png" width="266" height="269" alt="Фото интерьера">
+                </li>
+                <li class="gallery__item">
+                  <img class="gallery__photo" src="img/gallery_pic3.png" width="266" height="269" alt="Фото интерьера">
+                </li>
+              </ul>
+            </div>
+            <div class="gallery__block">
+              <ul class="gallery__list">
+                <li class="gallery__item">
+                  <img class="gallery__photo" src="img/gallery_pic4.png" width="266" height="269" alt="Фото интерьера">
+                </li>
+                <li class="gallery__item">
+                  <img class="gallery__photo" src="img/gallery_pic5.png" width="266" height="269" alt="Фото интерьера">
+                </li>
+                <li class="gallery__item gallery__item--large">
+                  <img class="gallery__photo" src="img/gallery_pic6.png" width="559" height="291" alt="Фото интерьера">
+                  <button class="gallery__button button" type="button">Открыть галерею</button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -120,7 +130,7 @@
               <h4 class="popular__name"></h4>
               <p class="popular__info"></p>
               <p class="popular__price"></p>
-              <button class="popular__button button" type="button">Добавить в корзину</button>
+              <button class="popular__button button" type="button">Купить</button>
             </li>
           </template>
         </div>
@@ -128,12 +138,15 @@
 
       <section class="feature">
         <div class="feature__wrapper">
-          <h2 class="feature__title">Почему именно мы?</h2>
-          <p class="feature__text">Мебель является одним из важнейших элементов дома и чаще всего является истинным отражением людей,
-            живущих в нем. Каждая мелочь, от стиля кровати до цвета стульев, имеет огромное значение, поэтому выбор правильной мебели
-            для вашего дома очень важен. У нас есть решение для вас. Наш интернет-магазин предлагает исключительные варианты мебели
-            для каждой части вашего дома, включая спальню, гостиную, столовую и многое другое.
-          </p>
+          <div class="feature__content">
+            <h2 class="feature__title">Почему именно мы?</h2>
+            <p class="feature__text">Мебель является одним из важнейших элементов дома и чаще всего является истинным отражением людей,
+              живущих в нем. Каждая мелочь, от стиля кровати до цвета стульев, имеет огромное значение, поэтому выбор правильной мебели
+              для вашего дома очень важен.
+            </p>
+            <p class="feature__text">У нас есть решение для вас. Наш интернет-магазин предлагает исключительные варианты мебели
+            для каждой части вашего дома, включая спальню, гостиную, столовую и многое другое.</p>
+          </div>
         </div>
       </section>
 
@@ -141,55 +154,56 @@
         <div class="news__wrapper">
           <h2 class="news__title">Последние новости</h2>
           <p class="news__subtitle">Представляем вашему вниманию новости из мира дизайнерских интерьеров, ландшафтного дизайна и декорирования.</p>
-          <article class="news__block">
-            <img class="news__avatar" src="img/news_avatar1.png" width="50" height="52" alt="Автор новости">
-            <p class="news__date">Опубликовано 18 октября 2021 г.</p>
-            <h4 class="news__caption">Как обустроить внутренний двор</h4>
-            <p class="news__info">Новые тренды в ландшафтном дизайне и лучшие идеи для планировки вашего двора.</p>
-            <a class="news__link" href="#">Читать далее</a>
-          </article>
-          <article class="news__block">
-            <img class="news__avatar" src="img/news_avatar2.png" width="50" height="52" alt="Автор новости">
-            <p class="news__date">Опубликовано 21 октября 2021 г.</p>
-            <h4 class="news__caption">Аксессуары для декора</h4>
-            <p class="news__info">Популярные аксессуары, расцыетки и решения для декорирования любой комнаты.</p>
-            <a class="news__link" href="#">Читать далее</a>
-          </article>
-          <article class="news__block">
-            <img class="news__avatar" src="img/news_avatar2.png" width="50" height="52" alt="Автор новости">
-            <p class="news__date">Опубликовано 24 октября 2021 г.</p>
-            <h4 class="news__caption">Как выбрать мягкую мебель</h4>
-            <p class="news__info">Всё о материалах, производителях, критериях качества и форм-факторе мягкой мебели.</p>
-            <a class="news__link" href="#">Читать далее</a>
-          </article>
+          <div class="news__content">
+            <article class="news__block">
+              <img class="news__avatar" src="img/news_avatar1.png" width="52" height="52" alt="Автор новости">
+              <p class="news__date">Опубликовано 18 октября 2021 г.</p>
+              <h4 class="news__caption">Как обустроить двор</h4>
+              <p class="news__info">Новые тренды в ландшафтном дизайне и лучшие идеи для планировки вашего двора.</p>
+              <a class="news__link" href="#">Читать далее</a>
+            </article>
+            <article class="news__block">
+              <img class="news__avatar" src="img/news_avatar2.png" width="52" height="52" alt="Автор новости">
+              <p class="news__date">Опубликовано 21 октября 2021 г.</p>
+              <h4 class="news__caption">Аксессуары для декора</h4>
+              <p class="news__info">Популярные аксессуары, расцветки и решения для декорирования любой комнаты.</p>
+              <a class="news__link" href="#">Читать далее</a>
+            </article>
+            <article class="news__block">
+              <img class="news__avatar" src="img/news_avatar3.png" width="502" height="52" alt="Автор новости">
+              <p class="news__date">Опубликовано 24 октября 2021 г.</p>
+              <h4 class="news__caption">Выбор мягкой мебели</h4>
+              <p class="news__info">Всё о материалах, производителях, критериях качества и форм-факторе мягкой мебели.</p>
+              <a class="news__link" href="#">Читать далее</a>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы наших покупателей</h2>
-          <p class="reviews__subtitle">Ознакомтесь с отзывами на предметы интерьера, приобретенные в нашем магазине.</p>
-          <div class="reviews__block">
-            <img class="reviews__quotes" src="img/reviews_quotes.png" alt="Кавычки">
-            <p class="reviews__text">Новый диван сделал гостинную очень уютной. Мой ребенок буквально не слезает с него, проводя время за просмотром мультфильмов и рисованием.</p>
-            <p class="reviews__author">Сергей Иванов</p>
-            <img class="reviews__avatar" src="img/reviews_avatar1.png" alt="Автор отзыва">
-          </div>
-          <div class="reviews__block">
-            <img class="reviews__quotes" src="img/reviews_quotes.png" alt="Кавычки">
-            <p class="reviews__text">Торшер оживил уголок нашего дома, который ранее пустовал. Атмосфера вокруг стала очень умиротворяющей и по-настоящему комфортной.</p>
-            <p class="reviews__author">Анна Петрова</p>
-            <img class="reviews__avatar" src="img/reviews_avatar1.png" alt="Автор отзыва">
-          </div>
-          <div class="reviews__block">
-            <img class="reviews__quotes" src="img/reviews_quotes.png" alt="Кавычки">
-            <p class="reviews__text">Кресло-качели - это больше, чем просто мебель. Это замечательное украшение, сделавшее интерьер нашего дома более привлекательным.</p>
-            <p class="reviews__author">Марина Смирнова</p>
-            <img class="reviews__avatar" src="img/reviews_avatar1.png" alt="Автор отзыва">
+          <p class="reviews__subtitle">Ознакомьтесь с отзывами на предметы интерьера, приобретенные в нашем магазине.</p>
+          <div class="reviews__content">
+            <div class="reviews__block">
+              <p class="reviews__text">Новый диван сделал гостинную очень уютной. Мой ребенок буквально не слезает с него, проводя время за просмотром мультфильмов и рисованием.</p>
+              <p class="reviews__author">Сергей Иванов</p>
+              <img class="reviews__avatar" src="img/reviews_avatar1.png" alt="Автор отзыва">
+            </div>
+            <div class="reviews__block reviews__block--current">
+              <p class="reviews__text">Торшер оживил уголок нашего дома, который ранее пустовал. Атмосфера вокруг стала очень умиротворяющей и по-настоящему комфортной.</p>
+              <p class="reviews__author">Анна Петрова</p>
+              <img class="reviews__avatar" src="img/reviews_avatar2.png" alt="Автор отзыва">
+            </div>
+            <div class="reviews__block">
+              <p class="reviews__text">Кресло-качели - это больше, чем просто мебель. Это замечательное украшение, сделавшее интерьер нашего дома более привлекательным.</p>
+              <p class="reviews__author">Марина Смирнова</p>
+              <img class="reviews__avatar" src="img/reviews_avatar3.png" alt="Автор отзыва">
+            </div>
           </div>
           <div class="reviews__toggles toggles">
             <svg class="toggles__button" width="43" height="13"><rect width="100%" height="100%"/></svg>
-            <svg class="toggles__button" width="43" height="13"><rect width="100%" height="100%"/></svg>
+            <svg class="toggles__button toggles__button--current" width="43" height="13"><rect width="100%" height="100%"/></svg>
             <svg class="toggles__button" width="43" height="13"><rect width="100%" height="100%"/></svg>
           </div>
         </div>
@@ -200,18 +214,20 @@
           <h2 class="newsletter__title">Новостная рассылка</h2>
           <p class="newsletter__subtitle">Подписывайтесь и получайте информацию об акциях, скидках и специальных предложениях.</p>
           <form class="newsletter__form" action="/Furniture-mail" method="post">
-            <div class="newsletter__field">
-              <label class="newsletter__label" for="name">Ваше имя:</label>
-              <input class="newsletter__input" type="text" name="name" id="name" required>
-            </div>
-            <div class="newsletter__field">
-              <label class="newsletter__label" for="phone">Номер телефон:</label>
-              <input class="newsletter__input" type="tel" name="phone" id="phone" placeholder="Укажите ваш номер">
-            </div>
-            <div class="newsletter__field">
-              <label class="newsletter__label" for="email">Эл. почта:</label>
-              <input class="newsletter__input" type="email" name="email" id="email" placeholder="Введите почту" required>
-            </div>
+            <fieldset class="newsletter__fieldset">
+              <div class="newsletter__field">
+                <label class="newsletter__label" for="name">Ваше имя:</label>
+                <input class="newsletter__input" type="text" name="name" id="name" required>
+              </div>
+              <div class="newsletter__field">
+                <label class="newsletter__label" for="phone">Номер телефона:</label>
+                <input class="newsletter__input" type="tel" name="phone" id="phone" placeholder="Укажите ваш номер">
+              </div>
+              <div class="newsletter__field">
+                <label class="newsletter__label" for="email">Эл. почта:</label>
+                <input class="newsletter__input" type="email" name="email" id="email" placeholder="Введите почту" required>
+              </div>
+            </fieldset>
             <button class="newsletter__button button" type="submit">Подписаться</button>
           </form>
         </div>
@@ -219,78 +235,72 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
         <div class="page-footer__top">
-          <div class="page-footer__block">
-            <a class="page-footer__logo" href="#">Магазин мебели</a>
-            <p class="page-footer__info">Покупайте мебель онлайн в лучшем магазине! Мы предлагаем наиболее оптимальное сочетание
-              эстетики, разнообразия, размеров, функциональности и цен на предеметы интерьера.
-            </p>
-            <ul class="page-footer__list social">
-              <li class="social__item">
-                <a class="social__link social__link--google" href="https://google.com">Google+</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://twitter.com">Twitter</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://instagram.com">Instagram</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com">Facebook</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__block">
-            <h4 class="paghe-footer__caption">Наши контакты</h4>
-            <ul class="page-footer__list contacts">
-              <li class="contacts__item">
-                ул. Радищева, д. 44, г. Санкт-Петербург, 191123
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+7812505060">+7(812)-50-50-60</a>
-              </li>
-              <li class="contacts__item">
-                <a  class="contacts__link" href="mailto:furniture@gmail.com">furniture@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__block">
-            <h4 class="paghe-footer__caption">Больше информации</h4>
-            <ul class="page-footer__list information">
-              <li class="information__item">
-                <a class="information__link" href="#">Условия доставки</a>
-              </li>
-              <li class="information__item">
-                <a class="information__link" href="#">Возврат товара</a>
-              </li>
-              <li class="information__item">
-                <a  class="information__link" href="#">Оформление рассрочки</a>
-              </li>
-              <li class="information__item">
-                <a  class="information__link" href="#">Порядок оплаты</a>
-              </li>
-            </ul>
+          <div class="page-footer__wrapper page-footer__wrapper--top">
+            <div class="page-footer__block">
+              <a class="page-footer__logo" href="#">Магазин мебели</a>
+              <p class="page-footer__info">Покупайте мебель онлайн в лучшем магазине! Мы предлагаем наиболее оптимальное сочетание
+                эстетики, разнообразия, размеров, функциональности и цен на предеметы интерьера.
+              </p>
+              <ul class="page-footer__social social">
+                <li class="social__item">
+                  <a class="social__link social__link--google" href="https://google.com">Google+</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com">Twitter</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="https://instagram.com">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com">Facebook</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__block">
+              <h4 class="page-footer__caption">Наши контакты</h4>
+              <ul class="page-footer__contacts contacts">
+                <li class="contacts__item">
+                  ул. Радищева, д. 44, г. Санкт-Петербург, 191123
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+7812505060">+7(812)-50-50-60</a>
+                </li>
+                <li class="contacts__item">
+                  <a  class="contacts__link" href="mailto:furniture@gmail.com">furniture@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__block">
+              <h4 class="page-footer__caption">Больше информации</h4>
+              <ul class="page-footer__information information">
+                <li class="information__item">
+                  <a class="information__link" href="#">Условия доставки</a>
+                </li>
+                <li class="information__item">
+                  <a class="information__link" href="#">Возврат товара</a>
+                </li>
+                <li class="information__item">
+                  <a  class="information__link" href="#">Оформление рассрочки</a>
+                </li>
+                <li class="information__item">
+                  <a  class="information__link" href="#">Порядок оплаты</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="page-footer__bottom">
-          <p class="page-footer__copyright">&#169;WebDesignStudio 2021. Все права защищены.</p>
-          <ul class="page-footer__list payments">
-            <li class="payments__item">
-              <img src="img/visa.png" width="56" height="43" alt="Visa">
-            </li>
-            <li class="payments__item">
-              <img src="img/mastercard.png" width="56" height="43" alt="MasterCard">
-            </li>
-            <li class="payments__item">
-              <img src="img/maestro.png" width="56" height="43" alt="Maestro">
-            </li>
-            <li class="payments__item">
-              <img src="img/americanexpress.png" width="56" height="43" alt="AmericanExpress">
-            </li>
-          </ul>
+          <div class="page-footer__wrapper page-footer__wrapper--bottom">
+            <p class="page-footer__copyright">&#169;WebDesignStudio 2021. Все права защищены.</p>
+            <ul class="page-footer__payments payments">
+              <li class="payments__item payments__item--visa">Visa</li>
+              <li class="payments__item payments__item--mc">MasterCard</li>
+              <li class="payments__item payments__item--maes">Maestro</li>
+              <li class="payments__item payments__item--ae">AmericanExpress</li>
+            </ul>
+          </div>
         </div>
-      </div>
     </footer>
     <script src="js/main.min.js"></script>
   </body>

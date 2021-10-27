@@ -1,0 +1,100 @@
+.page-footer {
+  .outline(blue);
+  width: @desktop-width;
+}
+
+.page-footer__wrapper {
+  .outline(red);
+
+  &--top {
+    .cont-pos(87px, 91px);
+    .grid(3, 120px);
+  }
+
+  &--bottom {
+    .cont-pos(21px, 17px);
+    .grid(2, 555px);
+  }
+}
+
+.page-footer__top {
+  background-color: @color-light;
+}
+
+.page-footer__bottom {
+  background-color: @color-black;
+}
+
+.page-footer__block {
+  .outline(chocolate);
+  width: 260px;
+
+  &:first-of-type {
+    width: 377px;
+  }
+}
+
+.page-footer__logo {
+  .outline(blue);
+  display: block;
+  width: 152px;
+  height: 27px;
+  font-size: 0;
+  background: url('../img/page_footer_logo.png') center no-repeat;
+
+  &:hover {
+    .black-orange;
+  }
+
+  &:active {
+    .black-gray;
+  }
+}
+
+.page-footer__info {
+  .outline(blue);
+  margin-top: 26px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-footer__social {
+  .outline(blue);
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.page-footer__caption {
+  .outline(blue);
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700px;
+}
+
+.page-footer__contacts {
+  .outline(blue);
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.page-footer__information {
+  .outline(blue);
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.page-footer__copyright {
+  .outline(blue);
+  display: inline-block;
+  width: 335px;
+  margin: 0;
+  font-size: 15px;
+  color: @color-white;
+  align-self: center;
+}
+
+.page-footer__payments {
+  .outline(blue);
+  margin: 0;
+}

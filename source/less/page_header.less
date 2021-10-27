@@ -1,0 +1,38 @@
+.page-header {
+  .outline(blue);
+  width: @desktop-width;
+  background-color: @color-gray;
+}
+
+.page-header__wrapper {
+  .outline(red);
+  .cont-pos(28px, 31px);
+  .grid(3, 78px);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 194px;
+    height: 79px;
+    background-color: @color-orange;
+  }
+}
+
+.page-header__categories {
+  //.outline(gold);
+  width: 174px;
+}
+
+.page-header__nav {
+  .outline(gold);
+  width: 736px;
+}
+
+.page-header__addition {
+  .outline(gold);
+  width: 50px;
+}
