@@ -58,6 +58,22 @@
     height: 10px;
     border-bottom: 1px solid @color-black;
   }
+
+  @media (max-width: @tablet-width) {
+    font-size: 14px;
+
+    &::before {
+      left: 45.5%;
+    }
+  }
+
+  @media (max-width: @mob-width) {
+    font-size: 12px;
+
+    &::before {
+      left: 38%;
+    }
+  }
 }
 
 //фильтры для изменения цвета картинок при наведении и нажатии

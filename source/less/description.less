@@ -4,14 +4,52 @@
   background: url('../img/description_bg.png') 100% 70px no-repeat @color-light;
 }
 
+@media (max-width: @tablet-width) {
+  .description {
+    width: @tablet-width;
+    background-position: 467px 80px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .description {
+    width: @mob-width;
+    background-image: none;
+  }
+}
+
 .description__wrapper {
   .outline(red);
   .cont-pos(205px, 155px);
 }
 
+@media (max-width: @tablet-width) {
+  .description__wrapper {
+    .cont-pos(100px, 80px);
+  }
+}
+
+@media (max-width: @mob-width) {
+  .description__wrapper {
+    .cont-pos(80px, 30px);
+  }
+}
+
 .description__block {
   .outline(chocolate);
   width: 604px;
+}
+
+@media (max-width: @tablet-width) {
+  .description__block {
+    width: 450px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .description__block {
+    width: @cont-width-mob;
+  }
 }
 
 .description__title {
@@ -22,10 +60,22 @@
   text-transform: capitalize;
 }
 
+@media (max-width: @mob-width) {
+  .description__title {
+    font-size: 36px;
+  }
+}
+
 .description__text {
   .outline(blue);
   margin-top: 64px;
   margin-bottom: 0;
+}
+
+@media (max-width: @mob-width) {
+  .description__text {
+    margin-top: 30px;
+  }
 }
 
 .description__button {
@@ -44,5 +94,12 @@
 
   &:active {
     background-color: @color-darkgray;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .description__button {
+    margin-top: 40px;
+    margin-left: 24px;
   }
 }

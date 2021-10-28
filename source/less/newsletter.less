@@ -4,9 +4,27 @@
   background-color: @color-gray;
 }
 
+@media (max-width: @tablet-width) {
+  .newsletter {
+    width: @tablet-width;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .newsletter {
+    width: @mob-width;
+  }
+}
+
 .newsletter__wrapper {
   .outline(red);
   .cont-pos(50px, 120px);
+}
+
+@media (max-width: @tablet-width) {
+  .newsletter__wrapper {
+    .cont-pos(50px, 60px);
+  }
 }
 
 .newsletter__title {
@@ -27,11 +45,29 @@
   margin-top: 87px;
 }
 
+@media (max-width: @mob-width) {
+  .newsletter__form {
+    margin-top: 40px;
+  }
+}
+
 .newsletter__fieldset {
   .outline(cyan);
   border: none;
   padding: 0;
   .grid(3, 105px);
+}
+
+@media (max-width: @tablet-width) {
+  .newsletter__fieldset {
+    .grid(3, 62px);
+  }
+}
+
+@media (max-width: @mob-width) {
+  .newsletter__fieldset {
+    display: block;
+  }
 }
 
 .newsletter__field {
@@ -40,6 +76,19 @@
   display: grid;
   grid-template-rows: 2;
   grid-row-gap: 10px;
+}
+
+@media (max-width: @tablet-width) {
+  .newsletter__field {
+    width: 200px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .newsletter__field {
+    width: @cont-width-mob;
+    margin-top: 30px;
+  }
 }
 
 .newsletter__label {
@@ -69,6 +118,18 @@
   }
 }
 
+@media (max-width: @tablet-width) {
+  .newsletter__input {
+    width: 178px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .newsletter__input {
+    width: 256px;
+  }
+}
+
 .newsletter__button {
   margin: 50px 0 0 470px;
   padding: 14px 40px;
@@ -85,5 +146,17 @@
 
   &:active {
     background-color: @color-darkgray;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .newsletter__button {
+    margin-left: 260px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .newsletter__button {
+    margin-left: 37px;
   }
 }

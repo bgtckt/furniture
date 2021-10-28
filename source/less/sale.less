@@ -4,9 +4,33 @@
   background-color: @color-gray;
 }
 
+@media (max-width: @tablet-width) {
+  .sale {
+    width: @tablet-width;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .sale {
+    width: @mob-width;
+  }
+}
+
 .sale__wrapper {
   .outline(red);
   .cont-pos(119px, 122px);
+}
+
+@media (max-width: @tablet-width) {
+  .sale__wrapper {
+    .cont-pos(75px, 40px);
+  }
+}
+
+@media (max-width: @mob-width) {
+  .sale__wrapper {
+    .cont-pos(30px, 30px);
+  }
 }
 
 .sale__title {
@@ -31,6 +55,21 @@
   .grid(4, 28px);
 }
 
+@media (max-width: @tablet-width) {
+  .sale__list {
+    .grid(2, 0);
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: @mob-width) {
+  .sale__list {
+    display: block;
+    margin-top: 40px;
+    padding-left: 7px;
+  }
+}
+
 .sale__card {
   .outline(chocolate);
   width: 265px;
@@ -41,6 +80,16 @@
 
   &:hover {
     transform: translateY(-7%);
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .sale__card {
+    margin-bottom: 35px;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
 
@@ -119,5 +168,15 @@
     font-weight: 600;
     color: @color-orange;
     margin-left: -65px;
+  }
+}
+
+.sale__toggles {
+  display: none;
+}
+
+@media (max-width: @mob-width) {
+  .sale__toggles {
+    display: block;
   }
 }
