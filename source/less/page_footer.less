@@ -1,5 +1,4 @@
 .page-footer {
-  .outline(blue);
   width: @desktop-width;
 }
 
@@ -16,7 +15,6 @@
 }
 
 .page-footer__wrapper {
-  .outline(red);
 
   &--top {
     .cont-pos(87px, 91px);
@@ -65,7 +63,6 @@
 }
 
 .page-footer__block {
-  .outline(chocolate);
   width: 260px;
 
   &:first-of-type {
@@ -89,17 +86,21 @@
     margin-top: 30px;
     padding-top: 5px;
     text-align: center;
-    border-top: 2px double @color-orange;
 
     &:first-of-type {
       width: @cont-width-mob;
       margin-top: 0;
     }
+
+    &:nth-of-type(2) {
+      padding: 20px 0;
+      border-top: 2px solid @color-orange;
+      border-bottom: 2px solid @color-orange;
+    }
   }
 }
 
 .page-footer__logo {
-  .outline(blue);
   display: block;
   width: 152px;
   height: 27px;
@@ -122,7 +123,6 @@
 }
 
 .page-footer__info {
-  .outline(blue);
   margin-top: 26px;
   margin-bottom: 0;
   font-size: 14px;
@@ -130,7 +130,6 @@
 }
 
 .page-footer__social {
-  .outline(blue);
   margin-top: 26px;
   margin-bottom: 0;
 }
@@ -142,26 +141,22 @@
 }
 
 .page-footer__caption {
-  .outline(blue);
   margin: 0;
   font-size: 21px;
   font-weight: 700px;
 }
 
 .page-footer__contacts {
-  .outline(blue);
   margin-top: 25px;
   margin-bottom: 0;
 }
 
 .page-footer__information {
-  .outline(blue);
   margin-top: 25px;
   margin-bottom: 0;
 }
 
 .page-footer__copyright {
-  .outline(blue);
   display: inline-block;
   width: 370px;
   margin: 0;
@@ -180,7 +175,6 @@
 }
 
 .page-footer__payments {
-  .outline(blue);
   margin: 0;
 }
 

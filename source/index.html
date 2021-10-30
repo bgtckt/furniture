@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
     <title>Магазин мебели</title>
   </head>
@@ -17,25 +21,25 @@
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="#" id="gallery-link">Галерея</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Избранное</a>
+              <a class="main-nav__link" href="#" id="popular-link">Избранное</a>
               <button class="main-nav__button button" type="button">Открыть список</button>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Магазин</a>
+              <a class="main-nav__link" href="#" id="sale-link">Магазин</a>
               <button class="main-nav__button button" type="button">Открыть список</button>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Блог</a>
+              <a class="main-nav__link" href="#" id="news-link">Блог</a>
               <button class="main-nav__button button" type="button">Открыть список</button>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О нас</a>
+              <a class="main-nav__link" href="#" id="feature-link">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link" href="#" id="contacts-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -314,6 +318,9 @@
           </div>
         </div>
     </footer>
-    <script src="js/main.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/load_data.min.js"></script>
+    <script src="js/main_nav_mob.min.js"></script>
+    <script src="js/page_scroll.min.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 .reviews {
-  .outline(blue);
   width: @desktop-width;
   background-color: @color-gray;
 }
@@ -17,7 +16,6 @@
 }
 
 .reviews__wrapper {
-  .outline(red);
   .cont-pos(50px, 75px);
 }
 
@@ -28,20 +26,17 @@
 }
 
 .reviews__title {
-  .outline(blue);
   margin: 0;
   .title;
 }
 
 .reviews__subtitle {
-  .outline(blue);
   margin-top: 18px;
   margin-bottom: 0;
   .subtitle;
 }
 
 .reviews__content {
-  .outline(chocolate);
   margin-top: 69px;
   padding-top: 162px;
   .grid(3, 0);
@@ -61,7 +56,6 @@
 }
 
 .reviews__block {
-  .outline(gold);
   width: 494px;
   text-align: center;
   box-shadow: 0px 5px 20px 0px @color-dark;
@@ -93,8 +87,10 @@
 
 @media (max-width: @mob-width) {
   .reviews__block {
+    display: none;
 
     &--current {
+      display: block;
       height: auto;
       margin-top: 0;
       z-index: 0;
@@ -108,7 +104,6 @@
 }
 
 .reviews__text {
-  .outline(blue);
   margin-top: 105px;
   margin-bottom: 0;
   padding: 0 63px;
@@ -129,7 +124,6 @@
 }
 
 .reviews__author {
-  .outline(blue);
   display: inline-block;
   margin-top: 22px;
   margin-bottom: 77px;
@@ -144,7 +138,6 @@
 }
 
 .reviews__avatar {
-  //.outline(blue);
   width: 110px;
   height: 110px;
   position: absolute;
@@ -160,7 +153,6 @@
 }
 
 .reviews__toggles {
-  .outline(blue);
   margin-top: 110px;
 }
 

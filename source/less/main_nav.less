@@ -9,15 +9,18 @@
     background-color: @color-gray;
     border: 2px solid @color-orange;
     padding-bottom: 10px;
+
+    &--closed {
+      display: none;
+    }
   }
 }
 
 .main-nav__list {
-  //.outline(blue);
   margin: 0;
   padding: 0;
   .no-list;
-  .grid(6, 24px);
+  .grid(6, 23px);
 }
 
 @media (max-width: @tablet-width) {
@@ -34,7 +37,6 @@
 }
 
 .main-nav__item {
-  //.outline(chocolate);
   .grid(2, 0);
 }
 
@@ -46,7 +48,6 @@
 }
 
 .main-nav__link {
-  .outline(gray);
   .no-line;
   text-transform: uppercase;
   font-weight: 700;
@@ -62,7 +63,6 @@
 }
 
 .main-nav__button {
-  .outline(blue);
   margin-left: 10px;
   font-size: 0;
   width: 16px;

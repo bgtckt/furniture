@@ -1,5 +1,4 @@
 .news {
-  .outline(blue);
   width: @desktop-width;
   background-color: @color-gray;
 }
@@ -17,7 +16,6 @@
 }
 
 .news__wrapper {
-  .outline(red);
   .cont-pos(127px, 75px);
 }
 
@@ -34,20 +32,17 @@
 }
 
 .news__title {
-  .outline(blue);
   margin: 0;
   .title;
 }
 
 .news__subtitle {
-  .outline(blue);
   margin-top: 18px;
   margin-bottom: 0;
   .subtitle;
 }
 
 .news__content {
-  .outline(gold);
   margin-top: 88px;
   .grid(3, 26px);
 }
@@ -60,7 +55,6 @@
 }
 
 .news__block {
-  .outline(chocolate);
   width: 364px;
   padding-top: 284px;
   background-position: top;
@@ -100,16 +94,15 @@
 }
 
 .news__avatar {
-  .outline(gold);
   width: 52px;
   height: 52px;
   position: absolute;
   top: 208px;
   left: 32px;
+  border-radius: 50%;
 }
 
 .news__date {
-  .outline(blue);
   margin: 0;
   padding-left: 29px;
   font-size: 14px;
@@ -130,7 +123,6 @@
 }
 
 .news__caption {
-  .outline(blue);
   margin-top: 39px;
   margin-bottom: 0;
   padding: 0 29px;
@@ -146,21 +138,18 @@
 }
 
 .news__info {
-  .outline(blue);
   margin-top: 27px;
   margin-bottom: 0;
-  padding: 0 29px;
+  padding: 0 29px 25px 29px;
   font-size: 14px;
   line-height: 24px;
+  border-bottom: 1px solid @color-gray;
 }
 
-
 .news__link {
-  .outline(blue);
   display: inline-block;
   .no-line;
-  margin-top: 45px;
-  margin-bottom: 19px;
+  margin: 19px 0;
   padding-left: 29px;
   font-size: 15px;
   font-weight: 700;

@@ -1,5 +1,4 @@
 .sale {
-  .outline(blue);
   width: @desktop-width;
   background-color: @color-gray;
 }
@@ -17,7 +16,6 @@
 }
 
 .sale__wrapper {
-  .outline(red);
   .cont-pos(119px, 122px);
 }
 
@@ -34,20 +32,17 @@
 }
 
 .sale__title {
-  .outline(blue);
   margin: 0;
   .title;
 }
 
 .sale__subtitle {
-  .outline(blue);
   margin-top: 18px;
   margin-bottom: 0;
   .subtitle;
 }
 
 .sale__list {
-  .outline(gray);
   .no-list;
   margin-top: 75px;
   margin-bottom: 0;
@@ -71,7 +66,6 @@
 }
 
 .sale__card {
-  .outline(chocolate);
   width: 265px;
   position: relative;
   border-radius: 0px 0px 20px 20px;
@@ -93,15 +87,23 @@
   }
 }
 
+@media (max-width: @mob-width) {
+  .sale__card {
+    display: none;
+
+    &--current {
+      display: block;
+    }
+  }
+}
+
 .sale__photo {
-  .outline(blue);
   width: 265px;
   height: 241px;
   margin-bottom: 18px;
 }
 
 .sale__label {
-  //.outline(blue);
   display: block;
   width: 85px;
   height: 25px;
@@ -118,12 +120,10 @@
 }
 
 .sale__reviews {
-  .outline(gold);
   margin-left: 20px;
   .grid(2, 0);
 
   & p {
-    .outline(blue);
     margin: 0 0 0 -70px;
     font-size: 15px;
     color: @color-darkgray;
@@ -131,13 +131,11 @@
 }
 
 .sale__stars {
-  .outline(blue);
   width: 87px;
   height: 16px;
 }
 
 .sale__name {
-  .outline(blue);
   margin-top: 15px;
   margin-bottom: 0;
   padding-left: 20px;
@@ -146,13 +144,17 @@
 }
 
 .sale__prices {
-  .outline(gold);
   margin: 15px 0 18px 0;
   .grid(2, 0);
 }
 
+@media (max-width: @mob-width) {
+  .sale__prices {
+    padding-bottom: 19px;
+  }
+}
+
 .sale__price {
-  .outline(blue);
   margin: 0;
   font-size: 15px;
 
@@ -160,7 +162,7 @@
     padding-left: 20px;
     color: @color-darkgray;
     align-self: center;
-    border-bottom: 1px solid @color-darkgray;
+    text-decoration: line-through;
   }
 
   &--new {
