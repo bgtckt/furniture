@@ -1,21 +1,21 @@
 {
-  "name": "pink",
+  "name": "furniture",
   "version": "1.0.0",
-  "description": "Проект по адаптивной верстке",
+  "description": "Проект для портфолио",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bgtckt/pink.git"
+    "url": "git+https://github.com/bgtckt/furniture.git"
   },
   "author": "Алексей Анпилов",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bgtckt/pink/issues"
+    "url": "https://github.com/bgtckt/furniture/issues"
   },
-  "homepage": "https://github.com/bgtckt/pink#readme",
+  "homepage": "https://github.com/bgtckt/furniture#readme",
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
