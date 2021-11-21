@@ -1,3 +1,4 @@
+"use strict";
 //Реализация слайдера для переключения между элементами разделов
 
 function itemToggle(items, toggles, itemsClassName) {

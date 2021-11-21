@@ -1,3 +1,4 @@
+"use strict";
 //Пролистывание страницы к нужному разделу
 
 const galleryLink = document.querySelector('#gallery-link');
