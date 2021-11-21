@@ -1,3 +1,4 @@
+"use strict";
 //Url-адреса БД с данными элементов из разделов sale и popular
 
 const requestUrlSale = 'https://api.jsonbin.io/b/617bec474a82881d6c6738e4';
