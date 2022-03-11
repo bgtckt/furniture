@@ -32,7 +32,7 @@
 
 body {
   min-width: 1592px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 1.2;
@@ -124,6 +124,7 @@ img {
 
 .page-header {
   width: 1592px;
+  margin: 0 auto;
   background-color: #f9f9f9;
 }
 
@@ -321,6 +322,7 @@ img {
 
 .page-main {
   width: 1592px;
+  margin: 0 auto;
 }
 
 .description {
@@ -1095,6 +1097,7 @@ img {
 
 .page-footer {
   width: 1592px;
+  margin: 0 auto;
 }
 
 .page-footer__wrapper--top {
